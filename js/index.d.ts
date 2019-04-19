@@ -350,6 +350,13 @@ export class UrbanAirship {
   static isQuietTimeEnabled(): Promise<boolean>;
 
   /**
+   * Enables or disables auto badge. Defaults to `NO`.
+   *
+   * @param {boolean} enabled enable auto-badging
+   */
+  static setAutobadgeEnabled(enabled: boolean): void;
+
+  /**
    * Sets the badge number for iOS. Badging is not supported for Android.
    *
    * @param {number} badgeNumber specified badge to set.
